@@ -6,8 +6,7 @@ import React, {
 
 import "./AdminOrders.css";
 
-const API_URL = "http://localhost:5000/api/orders";
-
+const API_URL = "https://ecommerce-dmv8.vercel.app/api/orders";
 /*
 ========================================================
 STATUS OPTIONS
