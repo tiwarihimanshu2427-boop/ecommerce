@@ -1,0 +1,805 @@
+/* =========================================================
+   PREMIUM SHOPNEST NAVBAR
+========================================================= */
+
+.user-navbar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #ececf4;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 4px 20px rgba(30, 25, 80, 0.05);
+}
+
+/* =========================================================
+   NAVBAR CONTAINER
+========================================================= */
+
+.user-navbar-container {
+  width: min(1380px, 94%);
+  min-height: 82px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.store-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  text-decoration: none;
+
+  min-width: 190px;
+
+  transition: transform 0.25s ease;
+}
+
+.store-logo:hover {
+  transform: translateY(-1px);
+}
+
+.store-logo-icon {
+  width: 48px;
+  height: 48px;
+
+  min-width: 48px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 23px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #17172f,
+      #30278b
+    );
+
+  box-shadow:
+    0 7px 18px rgba(48, 39, 139, 0.22);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.store-logo-icon::after {
+  content: "";
+
+  position: absolute;
+
+  width: 25px;
+  height: 25px;
+
+  background: rgba(255,255,255,0.13);
+
+  border-radius: 50%;
+
+  top: -10px;
+  right: -7px;
+}
+
+.store-logo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.store-logo-name {
+  color: #17172f;
+
+  font-size: 24px;
+
+  font-weight: 900;
+
+  letter-spacing: -0.8px;
+
+  line-height: 1;
+}
+
+.store-logo-name span {
+  background:
+    linear-gradient(
+      90deg,
+      #5f4ee8,
+      #9a4df5
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.store-logo-content small {
+  color: #88889a;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.user-nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  white-space: nowrap;
+}
+
+.user-nav-links a {
+  position: relative;
+
+  padding: 12px 16px;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  color: #5d5d70;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.user-nav-links a:hover {
+  color: #5147d6;
+
+  background: #f5f3ff;
+
+  transform: translateY(-1px);
+}
+
+.user-nav-links a.active {
+  color: #5147d6;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5f3ff,
+      #faf8ff
+    );
+}
+
+.user-nav-links a.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 18px;
+  right: 18px;
+
+  bottom: 4px;
+
+  height: 2px;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #5f4ee8,
+      #a44ff5
+    );
+}
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.navbar-search {
+  flex: 1;
+
+  max-width: 390px;
+
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+
+  background: #f8f8fc;
+
+  border: 1px solid #e8e7f1;
+
+  border-radius: 15px;
+
+  padding: 0 6px 0 14px;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.navbar-search:focus-within {
+  background: #ffffff;
+
+  border-color: #9188f5;
+
+  box-shadow:
+    0 0 0 4px rgba(98, 88, 232, 0.08);
+}
+
+.search-icon {
+  font-size: 16px;
+
+  opacity: 0.65;
+
+  margin-right: 8px;
+}
+
+.navbar-search input {
+  flex: 1;
+
+  min-width: 0;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #252538;
+
+  font-size: 13px;
+}
+
+.navbar-search input::placeholder {
+  color: #9b9baa;
+}
+
+.navbar-search button {
+  width: 36px;
+  height: 36px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6258e8,
+      #794de7
+    );
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition: all 0.25s ease;
+
+  box-shadow:
+    0 5px 13px rgba(98, 88, 232, 0.22);
+}
+
+.navbar-search button:hover {
+  transform: scale(1.05);
+
+  box-shadow:
+    0 7px 18px rgba(98, 88, 232, 0.3);
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.user-nav-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-left: auto;
+}
+
+/* =========================================================
+   ICON BUTTON
+========================================================= */
+
+.navbar-icon-btn {
+  position: relative;
+
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  color: #38384b;
+
+  border-radius: 12px;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+.navbar-icon-btn:hover {
+  background: #f3f1ff;
+
+  color: #5b50dc;
+
+  transform: translateY(-2px);
+}
+
+.nav-action-icon {
+  font-size: 20px;
+
+  line-height: 1;
+}
+
+/* =========================================================
+   WISHLIST COUNT
+========================================================= */
+
+.wishlist-count,
+.cart-count {
+  position: absolute;
+
+  top: 1px;
+  right: 0;
+
+  min-width: 17px;
+  height: 17px;
+
+  padding: 0 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f0446f,
+      #e52658
+    );
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  border: 2px solid #ffffff;
+}
+
+.cart-count {
+  background:
+    linear-gradient(
+      135deg,
+      #17172f,
+      #34306f
+    );
+}
+
+/* =========================================================
+   ACCOUNT BUTTON
+========================================================= */
+
+.navbar-account-btn {
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 0 13px;
+
+  margin-left: 5px;
+
+  border: 1px solid #e7e6f0;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  color: #39394d;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  transition: all 0.25s ease;
+}
+
+.navbar-account-btn:hover,
+.navbar-account-btn.account-active {
+  border-color: #d9d5ff;
+
+  background: #f7f5ff;
+
+  color: #564bd8;
+}
+
+.account-icon {
+  font-size: 17px;
+}
+
+.account-arrow {
+  font-size: 16px;
+
+  color: #858599;
+
+  margin-left: 1px;
+}
+
+/* =========================================================
+   LOGIN
+========================================================= */
+
+.navbar-login-btn {
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 19px;
+
+  margin-left: 2px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #17172f,
+      #302a6b
+    );
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  box-shadow:
+    0 6px 17px rgba(23, 23, 47, 0.16);
+
+  transition: all 0.25s ease;
+}
+
+.navbar-login-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 22px rgba(23, 23, 47, 0.24);
+
+  background:
+    linear-gradient(
+      135deg,
+      #24234c,
+      #40378c
+    );
+}
+
+.navbar-login-btn span {
+  font-size: 16px;
+}
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.mobile-menu-btn {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid #e5e4ef;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #292940;
+
+  font-size: 19px;
+
+  cursor: pointer;
+}
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.mobile-nav-menu {
+  display: none;
+}
+
+/* =========================================================
+   PREMIUM BOTTOM LINE
+========================================================= */
+
+.user-navbar::after {
+  content: "";
+
+  display: block;
+
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #6258e8 0%,
+      #7b4ee9 45%,
+      #c04df3 100%
+    );
+
+  opacity: 0.9;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1150px) {
+
+  .user-navbar-container {
+    width: 95%;
+    gap: 14px;
+  }
+
+  .store-logo {
+    min-width: auto;
+  }
+
+  .store-logo-content small {
+    display: none;
+  }
+
+  .user-nav-links a {
+    padding: 10px 11px;
+  }
+
+  .navbar-search {
+    max-width: 300px;
+  }
+
+  .navbar-account-btn span:not(.account-icon):not(.account-arrow) {
+    display: none;
+  }
+
+}
+
+/* =========================================================
+   TABLET SMALL
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .user-navbar-container {
+    min-height: 74px;
+  }
+
+  .store-logo-name {
+    font-size: 21px;
+  }
+
+  .store-logo-icon {
+    width: 43px;
+    height: 43px;
+    min-width: 43px;
+  }
+
+  .user-nav-links {
+    display: none;
+  }
+
+  .navbar-search {
+    max-width: none;
+  }
+
+  .navbar-account-btn {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-nav-menu {
+    display: flex;
+
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border-top: 1px solid #eeeeF4;
+
+    padding: 10px 5% 18px;
+
+    box-shadow:
+      0 12px 25px rgba(20,20,50,.08);
+  }
+
+  .mobile-nav-menu a {
+    padding: 13px 10px;
+
+    color: #3e3e52;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #f0f0f5;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+  }
+
+  .mobile-nav-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-nav-menu a:hover {
+    color: #5d52df;
+
+    background: #faf9ff;
+  }
+
+  .mobile-nav-menu a span {
+    color: #6258e8;
+  }
+
+  .mobile-login-link {
+    color: #6258e8 !important;
+  }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .user-navbar-container {
+    width: 92%;
+
+    min-height: 68px;
+
+    gap: 8px;
+  }
+
+  .store-logo {
+    gap: 8px;
+  }
+
+  .store-logo-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+
+    border-radius: 11px;
+
+    font-size: 19px;
+  }
+
+  .store-logo-name {
+    font-size: 20px;
+  }
+
+  .navbar-search {
+    display: none;
+  }
+
+  .user-nav-actions {
+    gap: 2px;
+  }
+
+  .navbar-icon-btn {
+    width: 39px;
+    height: 39px;
+  }
+
+  .navbar-login-btn {
+    height: 39px;
+
+    padding: 0 13px;
+
+    font-size: 12px;
+
+    border-radius: 10px;
+  }
+
+  .navbar-login-btn span {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    width: 39px;
+    height: 39px;
+  }
+
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .user-navbar-container {
+    width: 94%;
+  }
+
+  .store-logo-content {
+    display: none;
+  }
+
+  .store-logo {
+    min-width: 40px;
+  }
+
+  .navbar-icon-btn {
+    width: 36px;
+  }
+
+  .navbar-login-btn {
+    padding: 0 11px;
+  }
+
+}
