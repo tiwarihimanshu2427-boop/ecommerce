@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import UserNavbar from "../../components/common/UserNavbar";
 import "./ProductDetails.css";
 
-const API_URL = "http://localhost:5000/api/products";
+const API_URL = "https://ecommerce-dmv8.vercel.app/api/products";
 
 function normalizeProduct(data) {
   if (!data) return null;

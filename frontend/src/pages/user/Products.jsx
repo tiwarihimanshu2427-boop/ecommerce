@@ -18,7 +18,7 @@ import "./Products.css";
 
 
 
-const API_URL = "http://localhost:5000/api/products";
+const API_URL = "https://ecommerce-dmv8.vercel.app/api/products";
 
 
 

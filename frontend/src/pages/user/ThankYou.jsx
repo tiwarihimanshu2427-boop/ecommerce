@@ -5,8 +5,7 @@ import autoTable from "jspdf-autotable";
 import UserNavbar from "../../components/common/UserNavbar";
 import "./ThankYou.css";
 
-const API_URL = "http://localhost:5000/api/orders";
-
+const API_URL = "https://ecommerce-dmv8.vercel.app/api/orders";
 const getOrderReference = (order) =>
   order?.orderNumber ||
   order?.order_number ||

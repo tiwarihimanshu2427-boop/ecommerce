@@ -3,8 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import UserNavbar from "../../components/common/UserNavbar";
 import "./Checkout.css";
 
-const API_URL = "http://localhost:5000/api/orders";
-const PAYMENT_API_URL = "http://localhost:5000/api/payment";
+const API_URL = "https://ecommerce-dmv8.vercel.app/api/orders";
+const PAYMENT_API_URL = "https://ecommerce-dmv8.vercel.app/api/payment";
 
 const RAZORPAY_KEY_ID =
   import.meta.env.VITE_RAZORPAY_KEY_ID || "";

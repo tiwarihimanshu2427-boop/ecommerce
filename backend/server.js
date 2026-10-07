@@ -12,7 +12,10 @@ CORS
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://ecommerce-three-smoky-33.vercel.app",
+    ],
     credentials: true,
   })
 );

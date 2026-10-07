@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Register.css";
 
-const API_URL = "http://localhost:5000/api/auth";
-
+const API_URL = "https://ecommerce-dmv8.vercel.app/api/auth";
 const Register = () => {
   const navigate = useNavigate();
 

@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Account.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://ecommerce-dmv8.vercel.app";
 
 function Account() {
   const navigate = useNavigate();

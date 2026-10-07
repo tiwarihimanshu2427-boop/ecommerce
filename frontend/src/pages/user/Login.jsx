@@ -88,7 +88,7 @@ const Login = () => {
         console.log("ADMIN LOGIN ATTEMPT");
 
         const adminResponse = await fetch(
-          "http://localhost:5000/api/auth/admin-login",
+         "https://ecommerce-dmv8.vercel.app/api/auth/admin-login",
           {
             method: "POST",
 
@@ -173,7 +173,7 @@ const Login = () => {
       console.log("USER LOGIN ATTEMPT");
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/login",
+       "https://ecommerce-dmv8.vercel.app/api/auth/login",
         {
           method: "POST",
 
